@@ -28,6 +28,7 @@ export const lightTheme = createTheme({
   typography: {
     body1: {
       fontFamily: 'Ostrich_Sans',
+      textTransform:"capitalize"
     },
     body2: {
       fontFamily: 'Lato',

@@ -1,14 +1,12 @@
+'use client'
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import ContextProvider from './context-provider'
+import ContextProvider from "./context-provider";
+import Header from "@/components/Header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Turing Technologies Test",
-  description: "Frontend Test",
-};
 
 export default function RootLayout({
   children,
@@ -17,8 +15,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-              <ContextProvider>
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>Turing Technologies Test</title>
+        <meta name='description' content='Frontend Test' />
+        <link rel='TTLogo' href='/design-files/TTLogo.png' />
+        
+      </head>
+      <ContextProvider>
+        <body className={inter.className}>
+          <Header />
+          {children}
+        </body>
       </ContextProvider>
     </html>
   );

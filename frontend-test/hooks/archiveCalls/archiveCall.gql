@@ -1,0 +1,9 @@
+mutation archiveCall($id: ID!) {
+  archiveCall(id: $id) {
+    id
+    is_archived
+    created_at
+    call_type
+    direction
+  }
+}
