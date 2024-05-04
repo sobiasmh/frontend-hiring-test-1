@@ -115,7 +115,7 @@ function Row(props: {
           align="left"
           className={
             row.status === "Archived"
-              ? "text-green-700 bg-green-100"
+              ? "text-green-700 bg-green-100 h-[10px]"
               : "text-gray-700 bg-gray-100"
           }
         >
