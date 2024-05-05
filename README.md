@@ -1,4 +1,3 @@
-Certainly! Here's a simple README for your GitHub repo:
 
 ---
 
